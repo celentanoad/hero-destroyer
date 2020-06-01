@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Kongtext';
+  src: url('../fonts/kongtext.ttf') format('truetype');
+}
+
+body {
+  font-family: Kongtext;
+}
+
+img {
+  width: 150px;
+}
