@@ -68,7 +68,7 @@ let GameManager = {
                 break;
         }
         const heroImage = `../images/enemy-cards/${enemy.heroType.toLowerCase().replace(/ /g, "")}.png`;
-        header.innerHTML = `<p>${enemy.heroType} awaits your move!</p>`;
+        header.innerHTML = `<p>The ${enemy.heroType} awaits your move!</p>`;
         actions.innerHTML = '<a href="#" class="btn-attack" onclick="PlayerMoves.calcAttack()">Attack!</a>'
         enemyCard.innerHTML = `<img src=${heroImage}>
         <div><h3>${enemy.heroType}</h3>
@@ -80,22 +80,3 @@ let GameManager = {
         </div>`
     }
 }
-//High = 70-100, med = 30-70, low = 0-30
-//High = 3, med =2, low =1 
-//Dwarf: high health, med mana, high strength, low agility, low speed
-//10
-//Knight: med health, low mana, high strenght, med agility, med speed
-//10
-//Old Wizard: low health, high mana, low strength, med agility, low speed
-//8
-//Silly Wizard: med health, med mana, low strength, high agility, high speed
-//11
-//Strong Wizard: med health, high mana, low strength, high agility, med speed
-//11
-//Warrior: high health, low mana, high strength, low agaility, med speed
-//10
-// this.health = health;
-// this.mana = mana;
-// this.strength = strength;
-// this.agility = agility;
-// this.speed = speed;
