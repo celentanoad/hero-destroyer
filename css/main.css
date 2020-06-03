@@ -7,6 +7,9 @@ body {
   background-color: rgb(54, 79, 54);
   font-family: Kongtext;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header {
@@ -32,7 +35,18 @@ a:hover {
   text-align: center;
 }
 
+.card {
+  display: flex;
+  flex: 1;
+}
 
+.actions {
+  text-align: center;
+}
+
+.battlefield {
+  text-align: center;
+}
 
 .enemy-card {
   width: 400px;

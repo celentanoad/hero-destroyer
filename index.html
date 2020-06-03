@@ -13,50 +13,60 @@
   <title>Hero Destroyer</title>
 </head>
 <body>
-  <div class="header">
+  <header>
     <h1>Hero Destroyer</h1>
+  </header>
+  <div class="header">
     <p>Are you able to stop the hero from saving his village, helping that NPC, or whatever else heroes do? Or will you die trying, only to let the hero find their way to fame?</p>
   </div>
   <div class="player-card">
-    <a href="#" onclick="GameManager.startGame('Cyclops')">
-      <img src="./images/player-cards/cyclops.png" alt="cyclops">
-      <div class="nes-container is-rounded is-dark">
-        <h3>Cyclops</h3>
-        <p>
-          The Cyclops has high health and a strong attack, but his lack of depth perception hurts his accuracy and speed.
-        </p>
-      </div>
-    </a>
+    <div class="card">
+      <a href="#" onclick="GameManager.startGame('Cyclops')">
+        <img src="./images/player-cards/cyclops.png" alt="cyclops">
+        <div class="nes-container is-rounded is-dark">
+          <h3>Cyclops</h3>
+          <p>
+            The Cyclops has high health and a strong attack, but his lack of depth perception hurts his accuracy and speed.
+          </p>
+        </div>
+      </a>
+    </div>
     <hr>
-    <a href="#" onclick="GameManager.startGame('Dragon')">
-      <img src="./images/player-cards/dragon.png" alt="dragon">
-      <div class="nes-container is-rounded is-dark">
-        <h3>Dragon</h3>
-        <p>
-          The Dragon is fast and accurate, and doesn't have many faults in it's other attributes. 
-        </p>
-      </div>
-    </a>
+    <div class="card">
+      <a href="#" onclick="GameManager.startGame('Dragon')">
+        <img src="./images/player-cards/dragon.png" alt="dragon">
+        <div class="nes-container is-rounded is-dark">
+          <h3>Dragon</h3>
+          <p>
+            The Dragon is fast and accurate, and doesn't have many faults in it's other attributes. 
+          </p>
+        </div>
+      </a>
+    </div>
     <hr>
-    <a href="#" onclick="GameManager.startGame('Troll')">      
-    <img src="./images/player-cards/troll.png" alt="troll">
-      <div class="nes-container is-rounded is-dark">
-        <h3>Troll</h3>
-        <p>
-          The Troll's high strength makes up for it's stupidity.
-        </p>
-      </div>
-    </a>
+    <div class="card">
+      <a href="#" onclick="GameManager.startGame('Troll')">      
+      <img src="./images/player-cards/troll.png" alt="troll">
+        <div class="nes-container is-rounded is-dark">
+          <h3>Troll</h3>
+          <p>
+            The Troll's high strength makes up for it's stupidity.
+          </p>
+        </div>
+      </a>
+    </div>
     <hr>
-    <a href="#" onclick="GameManager.startGame('Wolf')">      
-    <img src="./images/player-cards/wolf.png" alt="wolf">
-      <div class="nes-container is-rounded is-dark">
-        <h3>Wolf</h3>
-        <p>
-          The Wolf has extremely high accuracy and a strong attack, but very low mana.
-        </p>
-      </div>
-    </a>
+    <div class="card">
+      <a href="#" onclick="GameManager.startGame('Wolf')">      
+      <img src="./images/player-cards/wolf.png" alt="wolf">
+        <div class="nes-container is-rounded is-dark">
+          <h3>Wolf</h3>
+          <p>
+            The Wolf has extremely high accuracy and a strong attack, but very low mana.
+          </p>
+        </div>
+      </a>
+    </div>
     <hr>
   </div>
   <div class="actions"></div>
