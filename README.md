@@ -1,4 +1,8 @@
 # Hero Destroyer
+Do you ever get tired of watching all those heroes finish their quests? Now you can stop them in their tracks! Pick a monster, find a hero, and start fighting!
+
+https://celentanoad.github.io/hero-destroyer/
+
 #### images from http://clipart-library.com/
 
 #### Stretch goals:
