@@ -3,7 +3,15 @@ Do you ever get tired of watching all those heroes finish their quests? Now you 
 
 https://celentanoad.github.io/hero-destroyer/
 
-#### images from http://clipart-library.com/
+### Technologies
+- Javascript
+- CSS
+- HTML
+- NES.css
+
+#### Credits
+images from http://clipart-library.com/
+NES.css https://nostalgic-css.github.io/NES.css/
 
 #### Stretch goals:
 - Add dark mode/light mode toggle
