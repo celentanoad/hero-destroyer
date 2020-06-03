@@ -6,3 +6,4 @@
 - Add level up system
 - Add randomness to battle text and win/loss messages
 - Add sounds
+- Display health bar
