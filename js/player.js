@@ -41,6 +41,27 @@ let PlayerMoves = {
             let enemyTotalAttack = [totalDamage, hitNumber];
             return enemyTotalAttack;
         }
+        function enemyCounterAttack() {
+            setTimeout(function() {
+
+                enemyHealth.innerHTML = `Health: ${enemy.health}`;
+                //enemy responds with attack
+                let enemyTotalAttack = enemyAttack();
+                totalDamage = enemyTotalAttack[0] * enemyTotalAttack[1];
+                player.health -= totalDamage;
+                totalDamage ? 
+                battlefield.innerHTML = `<div class="nes-container is-rounded is-dark">${enemy.heroType} attacked you for ${enemyTotalAttack[0]} ${enemyTotalAttack[1]} times!</div>`
+                :
+                battlefield.innerHTML = `<div class="nes-container is-rounded is-dark">${enemy.heroType} missed!</div>`
+                if (player.health <= 0) {
+                    //Display button to play again (currently not working)
+                    header.innerHTML = `<div class="nes-container is-rounded is-dark">You Lose!</div><button type="button" class="nes-btn is-success">Play Again?</button>`
+                    playerHealth.innerHTML = 'Health: 0';
+                } else {
+                    playerHealth.innerHTML = `Health: ${player.health}`;
+                }
+            }, 5000)
+        }
         const battlefield = document.querySelector(".battlefield");
         const header = document.querySelector(".header");
         let playerHealth = document.querySelector('.player-health');
@@ -59,22 +80,7 @@ let PlayerMoves = {
                 header.innerHTML = `<div class="nes-container is-rounded is-dark">You win!</div><button type="button" class="nes-btn is-success">Play Again?</button>`
                 enemyHealth.innerHTML = 'Health: 0';
             } else {
-                enemyHealth.innerHTML = `Health: ${enemy.health}`;
-                //enemy responds with attack
-                let enemyTotalAttack = enemyAttack();
-                totalDamage = enemyTotalAttack[0] * enemyTotalAttack[1];
-                player.health -= totalDamage;
-                totalDamage ? 
-                    battlefield.innerHTML = `<div class="nes-container is-rounded is-dark">${enemy.heroType} attacked you for ${enemyTotalAttack[0]} ${enemyTotalAttack[1]} times!</div>`
-                    :
-                    battlefield.innerHTML = `<div class="nes-container is-rounded is-dark">${enemy.heroType} missed!</div>`
-                if (player.health <= 0) {
-                    //Display button to play again (currently not working)
-                    header.innerHTML = `<div class="nes-container is-rounded is-dark">You Lose!</div><button type="button" class="nes-btn is-success">Play Again?</button>`
-                    playerHealth.innerHTML = 'Health: 0';
-                } else {
-                    playerHealth.innerHTML = `Health: ${player.health}`;
-                }
+                enemyCounterAttack();
             }
         }
     }
