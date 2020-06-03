@@ -9,12 +9,12 @@ https://celentanoad.github.io/hero-destroyer/
 - HTML
 - NES.css
 
-#### Credits
+### Credits
 images from http://clipart-library.com/
 
 NES.css https://nostalgic-css.github.io/NES.css/
 
-#### Stretch goals:
+### Stretch goals:
 - Add dark mode/light mode toggle
 - Add level up system
 - Add randomness to battle text and win/loss messages
