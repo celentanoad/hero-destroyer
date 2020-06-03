@@ -26,8 +26,8 @@ let GameManager = {
         const monsterImage = `../images/player-cards/${monsterType.toLowerCase()}.png`;
         playerCard.innerHTML = 
             `<img src=${monsterImage}>
-            <div><h3>${monsterType}</h3>
-            <p>Health: ${player.health}</p>
+            <div class="nes-container is-rounded is-dark"><h3>${monsterType}</h3>
+            <p class="player-health">Health: ${player.health}</p>
             <p>Mana: ${player.mana}</p>
             <p>Strength: ${player.strength}</p>
             <p>Agility: ${player.agility}</p>
@@ -71,8 +71,8 @@ let GameManager = {
         header.innerHTML = `<p>The ${enemy.heroType} awaits your move!</p>`;
         actions.innerHTML = '<a href="#" class="btn-attack" onclick="PlayerMoves.calcAttack()">Attack!</a>'
         enemyCard.innerHTML = `<img src=${heroImage}>
-        <div><h3>${enemy.heroType}</h3>
-        <p>Health: ${enemy.health}</p>
+        <div class="nes-container is-rounded is-dark"><h3>${enemy.heroType}</h3>
+        <p class="enemy-health">Health: ${enemy.health}</p>
         <p>Mana: ${enemy.mana}</p>
         <p>Strength: ${enemy.strength}</p>
         <p>Agility: ${enemy.agility}</p>

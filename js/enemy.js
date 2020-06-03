@@ -8,3 +8,4 @@ function Enemy(heroType, health, mana, strength, agility, speed) {
     this.agility = agility;
     this.speed = speed;
 }
+

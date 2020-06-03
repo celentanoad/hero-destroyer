@@ -19,21 +19,22 @@ img {
 
 a {
   color: white;
-  text-decoration: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
 }
 
 .player-card {
-  border: 1px solid black;
   width: 400px;
   text-align: center;
 }
 
-.battlefield {
-  border: 1px solid black;
-}
+
 
 .enemy-card {
-  border: 1px solid black;
   width: 400px;
   text-align: center;
 }
