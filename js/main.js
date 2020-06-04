@@ -23,7 +23,7 @@ let GameManager = {
             case "Wolf":
                 player = new Player(monsterType, 50, 10, 60, 100, 100);
         }      
-        const monsterImage = `../images/player-cards/${monsterType.toLowerCase()}.png`;
+        const monsterImage = `./images/player-cards/${monsterType.toLowerCase()}.png`;
         playerCard.innerHTML = 
             `<img src=${monsterImage}>
             <div class="nes-container is-rounded is-dark"><h3>${monsterType}</h3>
@@ -67,7 +67,7 @@ let GameManager = {
                 enemy = enemy05;
                 break;
         }
-        const heroImage = `../images/enemy-cards/${enemy.heroType.toLowerCase().replace(/ /g, "")}.png`;
+        const heroImage = `./images/enemy-cards/${enemy.heroType.toLowerCase().replace(/ /g, "")}.png`;
         header.innerHTML = `<p>A ${enemy.heroType} approaches!</p>`;
         actions.innerHTML = '<a href="#" type="button" class="nes-btn is-warning" onclick="PlayerMoves.calcAttack()">Attack!</a>'
         battlefield.innerHTML = `<div class="nes-container is-rounded is-dark">The ${enemy.heroType} awaits your move!</div>`
