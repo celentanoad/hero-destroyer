@@ -34,7 +34,8 @@ let PlayerMoves = {
             }
             let randomCrit = Math.floor(Math.random() * Math.floor(10));
             let totalDamage = baseDamage + randomCrit;
-            let hitNumber = Math.floor(Math.random() * Math.floor(player.agility / 10) /2);
+            let hitNumber = Math.floor(Math.random() * Math.floor(player.agility / 10) / 1.2);
+            console.log(hitNumber)
             let playerTotalAttack = [totalDamage, hitNumber];
             return playerTotalAttack;
         }
@@ -47,7 +48,8 @@ let PlayerMoves = {
             }
             let randomCrit = Math.floor(Math.random() * Math.floor(10));
             let totalDamage = baseDamage + randomCrit;
-            let hitNumber = Math.floor(Math.random() * Math.floor(enemy.agility / 10) /2);
+            let hitNumber = Math.floor(Math.random() * Math.floor(enemy.agility / 10) / 1.2);
+            console.log(hitNumber)
             let enemyTotalAttack = [totalDamage, hitNumber];
             return enemyTotalAttack;
         }
@@ -56,7 +58,7 @@ let PlayerMoves = {
             if (playerSpeed > enemySpeed) {
                 setTimeout(function() {
                     battlefield.innerHTML = `<div class="nes-container is-rounded is-dark">The ${enemy.heroType} responds with an attack!</div>`
-                }, 3000)
+                }, 2000)
             }
             setTimeout(function() {
                 //enemy responds with attack
@@ -78,13 +80,13 @@ let PlayerMoves = {
                     playerHealth.innerHTML = `Health: ${player.health}`;
                     (playerSpeed > enemySpeed) ? resetBtn() : playerCounterAttack();
                 }
-            }, playerSpeed > enemySpeed ? 6000 : 3000)
+            }, playerSpeed > enemySpeed ? 4000 : 2000)
         }
         function playerCounterAttack() {
             if (playerSpeed < enemySpeed) {
                 setTimeout(function() {
                     battlefield.innerHTML = `<div class="nes-container is-rounded is-dark">You respond with an attack!</div>`
-                }, 3000)
+                }, 2000)
             }
             setTimeout(function() {
                 let playerTotalAttack = playerAttack();
@@ -106,7 +108,7 @@ let PlayerMoves = {
                     enemyHealth.innerHTML = `Health: ${enemy.health}`;
                     (playerSpeed > enemySpeed) ? enemyCounterAttack() : resetBtn();
                 }
-            }, playerSpeed < enemySpeed ? 6000 : 3000)
+            }, playerSpeed < enemySpeed ? 4000 : 2000)
         }
         if (playerSpeed > enemySpeed) {
             playerCounterAttack();
