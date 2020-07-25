@@ -35,7 +35,6 @@ let PlayerMoves = {
             let randomCrit = Math.floor(Math.random() * Math.floor(10));
             let totalDamage = baseDamage + randomCrit;
             let hitNumber = Math.floor(Math.random() * Math.floor(player.agility / 10) / 1.2);
-            console.log(hitNumber)
             let playerTotalAttack = [totalDamage, hitNumber];
             return playerTotalAttack;
         }
@@ -49,7 +48,6 @@ let PlayerMoves = {
             let randomCrit = Math.floor(Math.random() * Math.floor(10));
             let totalDamage = baseDamage + randomCrit;
             let hitNumber = Math.floor(Math.random() * Math.floor(enemy.agility / 10) / 1.2);
-            console.log(hitNumber)
             let enemyTotalAttack = [totalDamage, hitNumber];
             return enemyTotalAttack;
         }
