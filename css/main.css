@@ -4,9 +4,9 @@
 }
 
 body {
-  background-color: rgb(54, 79, 54);
+  background-color: rgb(179, 179, 179);
   font-family: Kongtext;
-  color: white;
+  color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,7 +21,7 @@ img {
 }
 
 a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 

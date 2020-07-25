@@ -10,9 +10,11 @@ https://celentanoad.github.io/hero-destroyer/
 - NES.css
 
 ### Credits
-images from http://clipart-library.com/
+- Wolf image from https://freesvg.org/wolf-silhouette
+- All other images were designed and created by Mariel Celentano
 
-NES.css https://nostalgic-css.github.io/NES.css/
+- NES.css
+  https://nostalgic-css.github.io/NES.css/
 
 ### Stretch goals:
 - Add dark mode/light mode toggle
@@ -20,3 +22,4 @@ NES.css https://nostalgic-css.github.io/NES.css/
 - Add randomness to battle text and win/loss messages
 - Add sounds
 - Display health bar
+- ~~Improve images~~
