@@ -36,7 +36,7 @@ let GameManager = {
     },
     setSearch: function() {
         header.innerHTML = '<p>Find a hero to fight!</p>';
-        actions.innerHTML = '<a href="#" class="btn-search" onclick="GameManager.setFight()">Search for a hero</a>'
+        actions.innerHTML = '<a href="#" class="btn-search" onclick="GameManager.setFight()">Click here to search for a hero</a>'
         battlefield.style.visibility = "visible";
     },
     setFight: function() {
